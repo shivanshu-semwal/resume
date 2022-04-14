@@ -1,0 +1,114 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[top=0.75in, bottom=0.75in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{xcolor}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[utf8]{inputenc}
+%[ansinew]
+
+\hypersetup{
+  colorlinks = true, %Colours links instead of ugly boxes
+  urlcolor   = blue, %Colour for external hyperlinks
+  linkcolor  = blue, %Colour of internal links
+  citecolor  = true %Colour of citations, could be ``red''
+}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+
+\begin{multicols}{2}
+    \indent\raggedright\textbf{\huge Shivanshu}\newline
+    \vfill\null
+    \columnbreak
+    \indent \textbf{Email-id:} \href{mailto://semwalshivanshu@gmail.com}{semwalshivanshu@gmail.com} \\
+    \indent \textbf{Github:} \href{https://github.com/shivanshu-semwal}{https://github.com/shivanshu-semwal}\\
+    % \columnbreak
+    % \raggedleft{\includegraphics[width=.2\linewidth]{img/shivanshu.png}}
+\end{multicols}
+
+% \hspace{0.5cm}\\[-0.2cm]
+% \indent \textbf{Shivanshu} \\
+% \indent Email-id: \textbf{\url{semwalshivanshu@gmail.com}} \\
+% \indent \textbf{\url{hhttps://github.com/shivanshu-semwal}}\\
+
+
+\resheading{\textbf{ACADEMIC DETAILS} }\\[\lsep]
+\\
+%\begin{table}[ht!]
+%\begin{center}
+\indent \rule{6.8in}{0.4pt}\\
+\indent \begin{tabular}{ l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} }
+    \noindent \textbf{Year} & \textbf{Degree/Exam}                 & \textbf{Institute}               & \textbf{GPA/Marks(\%)} \\
+    2019 - Present          & B.Tech CSE (Specialization in DS-AI) & Graphic Era University, Dehradun & 9.2/10 \               \\
+    2019                    & 12\textsuperscript{th}, CBSE         & DAV Public School, Dehradun      & 92.00 \%               \\
+    2017                    & 10\textsuperscript{th}, ICSE         & Carman School, Dehradun          & 92.14 \%               \\
+\end{tabular}
+\indent \rule{6.8in}{0.4pt}
+%\end{center}
+%\end{table}
+\\
+
+\resheading{\textbf{EXPERIENCE} }\\[\lsep]
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item \noindent \textbf{Samsung PRISM Research Intern} \\
+          \textit{Aug 2021 - Apr 2022} \\
+          Enabled Samsung devices connect to ST cloud through STDK (D2C) and to any cloud through Matter (D2D).
+\end{itemize}
+
+\resheading{\textbf{PROJECTS} }\\[\lsep]
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item \noindent \textbf{Hand Gesture Recognition} \\
+          \textit{Oct 2021 - Nov 2021} \\
+          Predict hand gestures using image segmentation and convolutional neural networks. \\
+          Have a data generation module, to easily generate data.
+    \item \noindent \textbf{Recipe Recommendation System} \\
+          \textit{Oct 2021 - Present} \\
+          Based on availability of ingredients with a user this application
+          helps discover the list of possible dishes with theses ingredients.
+\end{itemize}
+
+\resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item \noindent \textbf{Languages:} C, C++, Java, Cypher, SQL, javascript
+    \item \noindent \textbf{Tools and Frameworks:} NeO4j, git, VS Code, \LaTeX
+\end{itemize}
+
+\resheading{\textbf{CO-SCHOLASTIC ACHIEVEMENT} }\\[\lsep]
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item \noindent \textbf{Participated in D.A.V National Sports} \\
+          \textit{Won cluster and zonal level chess events and participated in D.A.V National Sports, 12 Dec - 14 Nov 2018}
+    \item \noindent \textbf{Intellinovation GEU, 2021} \\
+          \textit{2nd position and cash prize of Rs. 15,000 \href{https://www.github.com/Bot-7037/Ventilator-Pressure-Prediction}{Ventilator Pressure Prediction}}
+\end{itemize}
+
+\end{document}
